@@ -1,13 +1,53 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Result</title>
-  <link rel="stylesheet" href="style.css">
+    <title>Your Life Partner</title>
+
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        #loading {
+            font-size: 22px;
+            margin-top: 50px;
+        }
+
+        #resultImg {
+            display: none;
+            margin-top: 20px;
+            width: 250px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    </style>
 </head>
+
 <body>
 
-  <h2>😄 Your Life Partner 😄</h2>
-  <img src="image.jpg" alt="Result Image" width="300">
+    <h1>😄 Your Swarasati Pujo Partner 😄</h1>
+
+    <div id="loading">Loading your life partner... ❤️</div>
+
+    <img id="resultImg" src="partner.jpg" alt="Result Image">
+
+    <script>
+        setTimeout(function () {
+            document.getElementById("loading").style.display = "none";
+            document.getElementById("resultImg").style.display = "block";
+        }, 2000);
+    </script>
 
 </body>
 </html>
