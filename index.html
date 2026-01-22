@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title> QR Generator</title>
-    <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <h2>QR Code Generator</h2>
-    <p>scan this QR to see your life patner</p>
-    <div id="qrcode"></div>
-    <script src ="https://cnd.jsdelivr.net/npm/qrcodejs/qrcode.min.js"></script>
-    <script>
-        new QRCode(document.getElementById("qrcode"),{text:"view.html",width:200,hight:200});
-    </script>
-    </body>
+<head>
+  <title>QR Code Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+  <h1>QR Code Generator</h1>
+  <p>scan this QR to see your life partner</p>
+
+  <div id="qrcode"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
 </html>
