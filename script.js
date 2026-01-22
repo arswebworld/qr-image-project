@@ -1,5 +1,9 @@
 setTimeout(() => {
-  document.querySelector(".loader").style.display = "none";
-  document.getElementById("loadingText").style.display = "none";
-  document.getElementById("result").style.display = "block";
+  document.getElementById("loading").style.display = "none";
+
+  
+  document.getElementById("resultText").innerHTML =
+    "😅 Sorry! কাউকে খুঁজে পাইনি…<br>Maybe destiny is still loading 💔";
+
+  document.getElementById("resultText").style.display = "block";
 }, 3000);
