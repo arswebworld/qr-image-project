@@ -1,53 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Your Life Partner</title>
-
-    <style>
-        body {
-            text-align: center;
-            font-family: Arial, sans-serif;
-        }
-
-        #loading {
-            font-size: 22px;
-            margin-top: 50px;
-        }
-
-        #resultImg {
-            display: none;
-            margin-top: 20px;
-            width: 250px;
-            animation: fadeIn 2s ease-in-out;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: scale(0.9);
-            }
-            to {
-                opacity: 1;
-                transform: scale(1);
-            }
-        }
-    </style>
+  <title>Your Life Partner</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <h1>😄 Your Swarasati Pujo Partner 😄</h1>
+<h1>😄 Your Swarasati Pujo Partner 😄</h1>
 
-    <div id="loading">Loading your life partner... ❤️</div>
+<p id="loading">Loading your life partner...</p>
 
-    <img id="resultImg" src="partner.jpg" alt="Result Image">
+<img id="resultImage" src="" alt="Result Image" style="display:none; width:250px;">
 
-    <script>
-        setTimeout(function () {
-            document.getElementById("loading").style.display = "none";
-            document.getElementById("resultImg").style.display = "block";
-        }, 2000);
-    </script>
+<p id="resultText" style="display:none; font-size:18px;"></p>
 
+<script src="script.js"></script>
 </body>
 </html>
