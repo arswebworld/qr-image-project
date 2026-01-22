@@ -1,5 +1,5 @@
-new QRCode(document.getElementById("qrcode"), {
-  text: "https://arswebworld.github.io/qr-image-project/view.html",
-  width: 200,
-  height: 200
-});
+setTimeout(() => {
+  document.querySelector(".loader").style.display = "none";
+  document.getElementById("loadingText").style.display = "none";
+  document.getElementById("result").style.display = "block";
+}, 3000);
