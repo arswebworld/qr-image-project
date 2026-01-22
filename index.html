@@ -1,18 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="bn">
 <head>
-  <title>QR Code Generator</title>
+  <meta charset="UTF-8">
+  <title>Your Life Partner</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <h1>QR Code Generator</h1>
-  <p>scan this QR to see your life partner</p>
+  <h2 id="loadingText">Loading your life partner...</h2>
 
-  <div id="qrcode"></div>
+  <div class="loader"></div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <div id="result">
+    😅 Sorry! কাউকে খুঁজে পাইনি…<br>
+    Maybe destiny is still loading 💔
+  </div>
+
   <script src="script.js"></script>
-
 </body>
 </html>
